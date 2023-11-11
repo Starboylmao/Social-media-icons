@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Social Media Icons with Popups (HTML + Pure  CSS Only)</title>
+  <title> Social Media Icons </title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
 <style>
   /*
@@ -30,7 +30,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   place-items: center;
-  background: linear-gradient(315deg, #ffffff, #ffffff);
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 
 .wrapper {
@@ -115,11 +115,12 @@ body {
   color: #ffffff;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #333333;
-  color: #ffffff;
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: rgb(0, 0, 0);
+  color: #e94f4f;
+  
 }
 
 .wrapper .youtube:hover,
@@ -133,25 +134,13 @@ body {
 <body>
 <!-- partial:index.partial.html -->
 <ul class="wrapper">
-  <li class="icon facebook">
-    <span class="tooltip">Facebook</span>
-    <span><i class="fab fa-facebook-f"></i></span>
-  </li>
-  <li class="icon twitter">
-    <span class="tooltip">Twitter</span>
-    <span><i class="fab fa-twitter"></i></span>
-  </li>
-  <li class="icon instagram">
+  <li class="icon instagram" onclick="window.location.href='https://www.instagram.com/solestockeruk';">
     <span class="tooltip">Instagram</span>
-    <span><i class="fab fa-instagram"></i></span>
+    <span onclick="event.preventDefault();"></span><i class="fab fa-instagram"></i></span>
   </li>
-  <li class="icon github">
-    <span class="tooltip">Github</span>
-    <span><i class="fab fa-github"></i></span>
-  </li>
-  <li class="icon youtube">
-    <span class="tooltip">Youtube</span>
-    <span><i class="fab fa-youtube"></i></span>
+  <li class="icon tiktok" onclick="window.location.href='https://www.tiktok.com/@solestocker';">
+    <span class="tooltip">Tiktok</span>
+    <span onclick="event.preventDefault();"></spanonclick><i class="fab fa-tiktok"></i></span>
   </li>
 </ul>
 <!-- partial -->
